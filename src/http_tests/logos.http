@@ -7,13 +7,23 @@ POST http://localhost:3001/logos
 Content-Type: application/json
 
 {
-  "name": "Tiger Woods"
+  "name": "Lakeside Golfer",
+  "description": "Lakeside golf Course - Putty and a flag",
+  "colors": ["green", "purple", "white"],
 }
 
 ### Test the PUT which should change a logo
-PUT http://localhost:3001/logos/
+PUT http://localhost:3001/logos/5f2cadcea6faf6544c88f844
 Content-Type: application/json
 
 {
-  "name": "Super Logo"
+  "name": "Lakeside Theme",
+  "description": "Classic",
+  "color":  ["red", "green"],
+  "created by": "Deva"
 }
+
+### Test the DELETE
+DELETE http://localhost:3001/logos/5f2cadcea6faf6544c88f844
+
+

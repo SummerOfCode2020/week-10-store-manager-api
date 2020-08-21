@@ -7,8 +7,10 @@ POST http://localhost:3001/products
 Content-Type: application/json
 
 {
-  "title": "Golf Pajamas",
-  "description": "The great golf pants"
+  "title": "Golfing Shoe",
+  "description": "All terrain Golf Shoe",
+  "created by": "Deva"
+  
 }
 
 ### Test the PUT which should change a product
@@ -17,7 +19,8 @@ PUT http://localhost:3001/product
 Content-Type: application/json
 
 {
-  "title": "Amazing UV Shirt"
+  "title": "Amazing UV Shirt",
+  "created by": "Deva"
 }
 
 

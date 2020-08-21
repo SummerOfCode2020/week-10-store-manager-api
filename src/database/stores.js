@@ -38,7 +38,7 @@ async function updateStore(id, store) {
     { _id: new ObjectID(id), },
     {
       $set: {
-        ...store,
+        store
       },
     },
   );

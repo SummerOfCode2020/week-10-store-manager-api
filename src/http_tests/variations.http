@@ -2,7 +2,18 @@
 ### variations are the product variations
 
 GET http://localhost:3001/variations
+Content-Type: application/json
+
+
 
 ### Test creating a variation
+
+POST http://localhost:3001/variations
+Content-Type: application/json
+
+{
+  "variations": "Summer sports gear",
+  "added by": "Deva"
+}
 
 ### Test the PUT which should change a variation
