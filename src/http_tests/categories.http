@@ -2,7 +2,21 @@
 ### stores are the customers such as each golf course
 
 GET http://localhost:3001/stores
+Content-type:  application/json
 
 ### Test creating a store
 
+POST http://localhost:3001/categories/
+Content-type:  application/json
+
+{
+  "name": "Senior golfer",
+  "description": "Senior friendly Golf gear",
+  "colors": ["green", "white"],
+  "updated by": "Deva"
+}
+
+
 ### Test the PUT which should change a store
+
+PUT http://localhost:3001/categories/5f2f3cd598b65fb708c84895

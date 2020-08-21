@@ -2,7 +2,16 @@
 ### stores are the customers such as each golf course
 
 GET http://localhost:3001/stores
+Content-Type: application/json
 
 ### Test creating a store
+
+POST http://localhost:3001/stores
+Content-Type: application/json
+
+{
+"name" : "Worcester County Club",
+"location" : "Springfiled,MA"
+}
 
 ### Test the PUT which should change a store

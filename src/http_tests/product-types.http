@@ -7,5 +7,22 @@
 GET http://localhost:3001/product-types
 
 ### Test creating a type
+POST http://localhost:3001/product-types
+Content-Type: application/json
+
+{
+  "title": "Ball Markers",
+  "description": "Light weight",
+  "created by": "Deva"
+  
+}
+
+{
+  "title": "Club Head Cover",
+  "description": "Dark Theme",
+  "created by": "Deva"
+  
+}
+
 
 ### Test the PUT which should change a type
